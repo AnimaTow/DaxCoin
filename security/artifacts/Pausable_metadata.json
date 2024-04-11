@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Initializes the contract in unpaused state."
+				},
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/security/Pausable.sol": "Pausable"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/security/Pausable.sol": {
+			"keccak256": "0xe5354654c6f5345cb35e82ed2e4187486133080b224490fb47fad058cae0f349",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb523fb979f24da464ef1a920690c9c59e0afad29fc2070a0ec7aa32a3e76a25",
+				"dweb:/ipfs/QmSLJpc225H9wxFgWmVqun13NXbh5mePqo5MzkNhvALahT"
+			]
+		},
+		"contracts/utils/Context.sol": {
+			"keccak256": "0xa6e6aa8ca4d4276c0b105e8dfc3ab9a488a1d2dc1696d5fff1a1dbb1cff3deca",
+			"urls": [
+				"bzz-raw://790d7e2dc9bf10bf6afecbf01d00571e059462cbaca70b8b001776bb4766c458",
+				"dweb:/ipfs/Qmb5xkbVy7mgTuSjFn5Yvp3ymeD4N4Yv6LUCjR1xY5T62N"
+			]
+		}
+	},
+	"version": 1
+}
